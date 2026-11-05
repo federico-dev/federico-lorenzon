@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Work in progress</title>
+<meta name="description" content="Sto lavorando a un nuovo progetto online. Il sito sarà presto disponibile.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #eef1f4;
+    --ink: #14213d;
+    --muted: #4a5670;
+    --accent: #ffb703;
+    --link: #1f4fd8;
+    --focus: #1f4fd8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101726;
+      --ink: #eef1f4;
+      --muted: #a9b4cb;
+      --accent: #ffb703;
+      --link: #8fb0ff;
+      --focus: #8fb0ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Bricolage Grotesque", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.55;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+  }
+  main {
+    width: 100%;
+    max-width: 44rem;
+    margin: 0 auto;
+  }
+  h1 {
+    font-weight: 800;
+    font-size: clamp(2.6rem, 9vw, 5.5rem);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    margin: 0 0 1.5rem;
+  }
+  p.lead {
+    font-size: 1.2rem;
+    color: var(--muted);
+    max-width: 34rem;
+    margin: 0 0 2.5rem;
+  }
+  .tape {
+    height: 14px;
+    border-radius: 2px;
+    margin: 0 0 2.5rem;
+    background: repeating-linear-gradient(
+      -45deg,
+      var(--accent) 0 14px,
+      var(--ink) 14px 28px
+    );
+    background-size: 39.6px 100%;
+    animation: slide 2.4s linear infinite;
+  }
+  @keyframes slide {
+    to { background-position: 39.6px 0; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .tape { animation: none; }
+  }
+  .contact { margin: 0; }
+  .contact a {
+    color: var(--link);
+    font-weight: 600;
+    text-underline-offset: 0.2em;
+  }
+  a:focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+  footer {
+    margin-top: 4rem;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+  <main>
+    <h1>Sto costruendo qualcosa di nuovo.</h1>
+
+    <!-- Sostituisci questa frase con una descrizione breve di cosa sarà il sito -->
+    <p class="lead">Il sito è in lavorazione e sarà online a breve. Se vuoi sapere quando è pronto, scrivimi.</p>
+
+    <div class="tape" role="img" aria-label="Lavori in corso"></div>
+
+    <p class="contact"><a href="mailto:lorenzon.federico@gmail.com">lorenzon.federico@gmail.com</a></p>
+
+    <footer>© 2026</footer>
+  </main>
+</body>
+</html>
